@@ -1,24 +1,31 @@
 import React from 'react';
+import classes from './Profile.module.css';
 
 const Profile = () => {
-    return(
-        <nav className="nav">
+    return (
+        <main className={classes.content}>
             <div>
-                <a href="#">Profile</a>
+                <img src="http://fsaea.org/wp-content/uploads/2013/08/whatwedo.jpg" alt="title" />
             </div>
             <div>
-                <a href="#">Messages</a>
+                ava + description
             </div>
             <div>
-                <a href="#">News</a>
+                Posts
+                <div>
+                    <div className={classes.item}>
+                        post one
+                    </div>
+                    <div className={classes.item}>
+                        post two
+                    </div>
+                    <div className={classes.item}>
+                        post three
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#">Music</a>
-            </div>
-            <div>
-                <a href="#">Settings</a>
-            </div>
-        </nav>
+            
+        </main>
     )
 }
 

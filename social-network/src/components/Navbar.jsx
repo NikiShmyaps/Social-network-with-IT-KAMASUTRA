@@ -1,28 +1,26 @@
 import React from 'react';
+import classes from './Navbar.module.css';
 
-const Profile = () => {
+const Navbar = () => {
     return (
-        <main className="content">
-            <div>
-                <img src="http://fsaea.org/wp-content/uploads/2013/08/whatwedo.jpg" alt="title" />
+        <nav className={classes.nav}>
+            <div className={classes.item}>
+                <a>Profile</a>
             </div>
-            <div>
-                ava + description
-        </div>
-            <div>
-                Posts
-          <div>
-                    post one
-          </div>
-                <div>
-                    post two
-          </div>
-                <div>
-                    post three
-          </div>
+            <div className={`${classes.item} ${classes.active}`}>
+                <a>Messages</a>
             </div>
-        </main>
+            <div className={classes.item}>
+                <a>News</a>
+            </div>
+            <div className={classes.item}>
+                <a>Music</a>
+            </div>
+            <div className={classes.item}>
+                <a>Settings</a>
+            </div>
+        </nav>
     )
 }
 
-export default Profile;
+export default Navbar;
