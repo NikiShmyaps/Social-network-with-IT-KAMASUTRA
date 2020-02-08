@@ -1,16 +1,15 @@
 import React from 'react';
 import classes from './Post.module.css';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
   return (
     <div className={classes.item}>
       <img src="https://pp.userapi.com/c304305/u174204464/d_abf842b5.jpg?ava=1" alt="avatar"/>
-      post one
+      {props.message}
       <div>
-        <span>Like</span>
+      <span>Like </span> {props.likeCount}
       </div>
     </div>
-
   )
 }
 
