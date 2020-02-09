@@ -4,7 +4,7 @@ import MyPosts from './MyPost/MyPosts';
 
 const Profile = () => {
     return (
-        <main className={classes.content}>
+        <main >
             <div>
                 <img src="http://fsaea.org/wp-content/uploads/2013/08/whatwedo.jpg" alt="title" />
             </div>
