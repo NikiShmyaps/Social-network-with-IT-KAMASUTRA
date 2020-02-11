@@ -3,6 +3,16 @@ import classes from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = () => {
+
+  let posts = [
+    {id:1, post: "Hi, how are you?", likeCount: 12},
+    {id:2, post: "It's my first post.", likeCount: 1}
+  ];
+
+  let postsElements = posts.map (
+    post => <Post message={post.post} likeCount={post.likeCount} id={post.id}/>
+  )
+
   return (
     <div className={classes.postsBlock}>
       <h3>My posts</h3>
@@ -10,8 +20,7 @@ const MyPosts = () => {
         <div><textarea></textarea></div>
         <div><button>New post</button></div>
         <div className={classes.posts}>
-          <Post message="Hi, how are you?" likeCount="15"/>
-          <Post message="It's my first post." likeCount="5"/>
+          {postsElements}
         </div>
       </div>
     </div>
