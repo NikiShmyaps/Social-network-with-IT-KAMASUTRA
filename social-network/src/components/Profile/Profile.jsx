@@ -1,16 +1,11 @@
 import React from 'react';
-import classes from './Profile.module.css';
+// import classes from './Profile.module.css';
 import MyPosts from './MyPost/MyPosts';
-
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 const Profile = () => {
     return (
         <main >
-            <div>
-                <img src="http://fsaea.org/wp-content/uploads/2013/08/whatwedo.jpg" alt="title" />
-            </div>
-            <div>
-                ava + description
-            </div>
+            <ProfileInfo/>
             <MyPosts/>            
         </main>
     )
