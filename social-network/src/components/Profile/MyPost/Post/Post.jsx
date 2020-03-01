@@ -5,7 +5,7 @@ const MyPosts = (props) => {
   return (
     <div className={classes.item}>
       <img src="https://pp.userapi.com/c304305/u174204464/d_abf842b5.jpg?ava=1" alt="avatar"/>
-      {props.message}
+      <span>{props.message}</span>
       <div>
       <span>Like </span> {props.likeCount}
       </div>
